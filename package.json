@@ -1,0 +1,37 @@
+{
+  "name": "lip-protocol",
+  "version": "0.1.0",
+  "description": "Liquidity Intelligence Protocol - Smart Yield Optimizer for Solana",
+  "main": "index.js",
+  "scripts": {
+    "test": "anchor test",
+    "build": "anchor build",
+    "deploy": "anchor deploy",
+    "localnet": "solana-test-validator",
+    "keys": "solana-keygen grind-validator",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "solana",
+    "defi",
+    "yield",
+    "optimization",
+    "blockchain"
+  ],
+  "author": "LIP Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.0",
+    "@solana/web3.js": "^1.91.0",
+    "@types/bn.js": "^5.1.5",
+    "@types/chai": "^4.3.12",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "bn.js": "^5.2.1"
+  }
+}

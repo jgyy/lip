@@ -1,0 +1,27 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+strategy = "4Xwd8CQkmhKzDYc8d1uEZd4iG3q1Wq3oCqgZVJrmmP9U"
+vault = "2nMr2an62tQzRbqBHuVn9oPxgkZfTfr5Sku2dKejU7Lu"
+
+[programs.mainnet]
+strategy = "STR1111111111111111111111111111111111111111"
+vault = "VLT1111111111111111111111111111111111111111"
+
+[programs.testnet]
+strategy = "STR1111111111111111111111111111111111111111"
+vault = "VLT1111111111111111111111111111111111111111"
+
+[registry]
+url = "https://api.github.com/repos/coral-xyz/anchor/releases/latest"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha --timeout 1000000 tests/**/*.ts"

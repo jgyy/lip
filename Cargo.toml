@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "programs/vault",
+    "programs/strategy"
+]
+
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["LIP Team"]
+
+[workspace.dependencies]
+anchor-lang = "0.30"
+anchor-spl = "0.30"
+thiserror = "1.0"
+
+[profile.release]
+overflow-checks = true
