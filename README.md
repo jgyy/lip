@@ -2,6 +2,28 @@
 
 A smart yield optimizer for Solana that intelligently allocates capital across DeFi protocols based on risk-adjusted returns.
 
+---
+
+## Algorithms
+
+1. **Risk-Adjusted Scoring**: `Score = (APY × 50%) - (Volatility × 30%) - (IL Risk × 20%) + (Safety × 10%)`
+2. **Rebalancing Logic**: Triggers when opportunity score improves by threshold (1-hour cooldown)
+3. **Share Price Model**: `shares = deposit × total_shares / total_assets` (yield auto-compounds)
+4. **Fee Distribution**: 10% of yield collected as protocol fee
+
+---
+
+## User Types & Actions
+
+| User Type | Actions |
+|-----------|---------|
+| **Regular User** | `deposit()`, `withdraw()` |
+| **Admin** | `initialize()`, `harvest()`, `update_settings()`, `assign_role()`, `revoke_role()`, `emergency_pause()` |
+| **Strategy Manager** | `register_opportunity()`, `evaluate()`, `rebalance()` |
+| **Treasury** | `withdraw_fees()` |
+
+---
+
 ## Overview
 
 LIP brings **intelligent, risk-aware yield optimization** to Solana DeFi. Unlike passive strategies or simple APY-chasing, LIP actively balances returns against risks like impermanent loss and volatility, making it suitable for both conservative and aggressive users.

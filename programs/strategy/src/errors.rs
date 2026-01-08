@@ -31,4 +31,13 @@ pub enum StrategyError {
 
     #[msg("No yield to harvest")]
     NoYield,
+
+    #[msg("RBAC: Invalid role value")]
+    InvalidRole,
+
+    #[msg("RBAC: System is under emergency pause")]
+    EmergencyPaused,
+
+    #[msg("RBAC: Role authority not found")]
+    RoleAuthorityNotFound,
 }

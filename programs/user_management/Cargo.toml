@@ -1,5 +1,5 @@
 [package]
-name = "vault"
+name = "user_management"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

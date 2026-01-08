@@ -1,7 +1,8 @@
 [workspace]
 members = [
     "programs/vault",
-    "programs/strategy"
+    "programs/strategy",
+    "programs/user_management"
 ]
 
 resolver = "2"

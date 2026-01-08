@@ -12,7 +12,6 @@ pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
     vault.total_yield = 0;
     vault.accumulated_fees = 0;
     vault.num_users = 0;
-    vault.bump = ctx.bumps.vault;
 
     Ok(())
 }

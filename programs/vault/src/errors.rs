@@ -31,4 +31,13 @@ pub enum VaultError {
 
     #[msg("Invalid strategy opportunity")]
     InvalidStrategy,
+
+    #[msg("RBAC: Invalid role value")]
+    InvalidRole,
+
+    #[msg("RBAC: System is under emergency pause")]
+    EmergencyPaused,
+
+    #[msg("RBAC: Role authority not found")]
+    RoleAuthorityNotFound,
 }

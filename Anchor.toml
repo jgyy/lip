@@ -5,15 +5,18 @@ resolution = true
 skip-lint = false
 
 [programs.devnet]
-strategy = "4Xwd8CQkmhKzDYc8d1uEZd4iG3q1Wq3oCqgZVJrmmP9U"
-vault = "2nMr2an62tQzRbqBHuVn9oPxgkZfTfr5Sku2dKejU7Lu"
+strategy = "EUWvahvmdyPRgmwcFuqJdJ4FX8S2syWGc8XdTdafshZ2"
+user_management = "BE2bDcazEUS5YpSW2JgJ2CAeTErp8LrpkZWAuW8WXa4h"
+vault = "76MQ83iPkH4ERPWq8cDKwo7KaQrSpkdwF6qdTbHi7Q7j"
 
 [programs.mainnet]
 strategy = "STR1111111111111111111111111111111111111111"
+user_management = "UMgmtXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 vault = "VLT1111111111111111111111111111111111111111"
 
 [programs.testnet]
 strategy = "STR1111111111111111111111111111111111111111"
+user_management = "UMgmtXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 vault = "VLT1111111111111111111111111111111111111111"
 
 [registry]
